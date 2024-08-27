@@ -29,6 +29,16 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
+<style>
+  .action:hover{
+    background: rgb(194, 220, 228);
+    padding: 8px;  
+    color: #000;
+    border-radius: 10px;  
+    box-shadow: 1px 2px 4px;
+    transition: 0.5s;
+  }
+</style>
 
 <body>
 
@@ -526,13 +536,13 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Sales',
+                          name: 'fee',
                           data: [31, 40, 28, 51, 42, 82, 56],
                         }, {
                           name: 'Revenue',
                           data: [11, 32, 45, 32, 34, 52, 41]
                         }, {
-                          name: 'Customers',
+                          name: 'Consuptions',
                           data: [15, 11, 32, 18, 9, 24, 11]
                         }],
                         chart: {
@@ -741,68 +751,59 @@
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
+             
             </div>
 
             <div class="card-body">
-              <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+              <h5 class="card-title">Quick  <span>| Action</span></h5>
 
               <div class="activity">
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">32 min</div>
+                
                   <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
+                    <a href="#" class="action">View Total students</a>
                   </div>
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">56 min</div>
-                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                  
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    Voluptatem blanditiis blanditiis eveniet
+                    <a href="#" class="action">View Total workers</a>
                   </div>
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">2 hrs</div>
-                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+      
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    Voluptates corrupti molestias voluptatem
+                    <a href="#" class="action">View Total Amount</a>
                   </div>
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">1 day</div>
-                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+            
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+                  <a href="#" class="action">Manage users</a>
                   </div>
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">2 days</div>
-                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    Est sit eum reiciendis exercitationem
+                    <a href="#" class="action">View students paid fee</a>
                   </div>
                 </div><!-- End activity item-->
 
                 <div class="activity-item d-flex">
-                  <div class="activite-label">4 weeks</div>
-                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start '></i>
                   <div class="activity-content">
-                    Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                  </div>
+                  <a href="#" class="action">View recent Activity</a>
                 </div><!-- End activity item-->
 
               </div>

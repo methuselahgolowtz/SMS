@@ -404,9 +404,9 @@
                     <td>0634563435</td>
                     <td>1995/02/11</td>
                     <td>
-                      <a  href="#" class="bi bi-trash" ></a>
-                      <a  href="#" class="bi bi-upload" ></a>
-                      <a  href="#" class="bi bi-trash" ></a>
+                      <a  href="#" class="bi bi-eye" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                      <a  href="#" class="bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#exampleModal1"></a>
+                      <a  href="#" class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal2"></a>
                     </td>
                   </tr>
                   <tr>
@@ -416,9 +416,9 @@
                     <td>0698953543</td>
                     <td>2000/05/16</td>
                     <td>
-                      <a  href="#" class="bi bi-trash" ></a>
-                      <a  href="#" class="bi bi-upload" ></a>
-                      <a  href="#" class="bi bi-trash" ></a>
+                      <a  href="#" class="bi bi-eye" data-bs-target="#exampleModal"></a>
+                      <a  href="#" class="bi bi-pencil-square" data-bs-target="#exampleModal1"></a>
+                      <a  href="#" class="bi bi-trash" data-bs-target="#exampleModal2"></a>
                     </td>
                   </tr>
                  
@@ -460,6 +460,181 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">View Teacher</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText" value="Enock enock" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" value="methuselahenock783@gmail.com" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Status</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail" value="teacher" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Location</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail" value="ujasi" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputEmail" value="0623515753" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">DOB</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="inputEmail" value="20/3/1994" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">password </label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputEmail" value="12345678" readonly>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                  <div class="col-sm-10"> 
+                    <input type="password" class="form-control" id="inputPassword" value="12345678" readonly>
+                  </div>
+
+                  
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="submit" class="btn btn-primary">Save changes</button> -->
+                  </div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Remove teacher</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <p>Are you sure, do you want to delete this?</p>
+                           <button class="btn btn-danger"> yes</button>
+                           <button class="btn btn-primary"> No</button>
+                          
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+
+
+                                  
+   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit teacher</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText" value="Enock enock" >
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" value="methuselahenock783@gmail.com">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Status</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail" value="teacher">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Location</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputEmail" value="ujasi">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputEmail" value="0623515753">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">DOB</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="inputEmail" value="20/3/1994">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">password </label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputEmail" value="12345678">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                  <div class="col-sm-10"> 
+                    <input type="password" class="form-control" id="inputPassword" value="12345678">
+                  </div>
+
+                  
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                                
 
 </body>
 
