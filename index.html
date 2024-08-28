@@ -38,6 +38,10 @@
     box-shadow: 1px 2px 4px;
     transition: 0.5s;
   }
+  #round{
+    border-radius: 50%;
+  }
+
 </style>
 
 <body>
@@ -763,7 +767,7 @@
                 
                   <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    <a href="#" class="action">View Total students</a>
+                    <a href="#" class="action" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Total students</a>
                   </div>
                 </div><!-- End activity item-->
 
@@ -771,7 +775,7 @@
                   
                   <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
-                    <a href="#" class="action">View Total workers</a>
+                    <a href="#" class="action" data-bs-toggle="modal" data-bs-target="#exampleModal2">View Total workers</a>
                   </div>
                 </div><!-- End activity item-->
 
@@ -979,37 +983,37 @@
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+              <h5 class="card-title">Recent &amp; Activity <span>| Today</span></h5>
 
               <div class="news">
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-                  <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+                  <img src="assets/img/news-1.jpg" alt="" id="round">
+                  <h4><a href="#">joshua kishiri</a></h4>
+                  <p>he changed the background last min</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Quidem autem et impedit</a></h4>
-                  <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+                  <img src="assets/img/news-2.jpg" alt="" id="round">
+                  <h4><a href="#">jeremiah mathayo</a></h4>
+                  <p>he updated new school fee last hours</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+                  <img src="assets/img/news-3.jpg" alt="" id="round">
+                  <h4><a href="#">moses majuma </a></h4>
+                  <p>he changed viewed the total Registered stundents last hours</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-                  <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+                  <img src="assets/img/news-4.jpg" alt="" id="round">
+                  <h4><a href="#">marco plato</a></h4>
+                  <p>he changed the password last hours</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
-                  <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
+                  <img src="assets/img/news-5.jpg" alt="" id="round">
+                  <h4><a href="#">Esamwel samwel</a></h4>
+                  <p>he updated new anouncenments last time.</p>
                 </div>
 
               </div><!-- End sidebar recent posts-->
@@ -1048,6 +1052,73 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Total students</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           
+          <section class="section">
+            <div class="row">
+              <div class="col-lg-12">
+      
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Registered Students</h5>
+                    <p>View Registered students with their classes</p>
+      
+                    <!-- Table with stripped rows -->
+                    <table class="table datatable">
+                      <thead>
+                        <tr>
+                          <th>
+                            <b>N</b>ame
+                          </th>
+                          <th>Class</th>
+                          <th>Location</th>
+                          <th>Phone</th>
+                          <th data-type="date" data-format="YYYY/DD/MM">DOB</th>
+                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Enock Enock</td>
+                          <td>STD 4</td>
+                          <td>ujasi</td>
+                          <td>0634563435</td>
+                          <td>2005/02/11</td>
+                        
+                        </tr>
+                        <tr>
+                          <td>Seleman Seleman</td>
+                          <td>STD 3</td>
+                          <td>Makulu</td>
+                          <td>0698953543</td>
+                          <td>2007/05/16</td>
+                         
+                        </tr>
+                       
+                       
+                      </tbody>
+                    </table>
+                    <!-- End Table with stripped rows -->
+      
+
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+
+ <!-- another quick action -->
+ 
 
 </body>
 
